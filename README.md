@@ -1,1 +1,1 @@
-# NUConnects-Frontend
+# NUConnect
