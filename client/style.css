@@ -22,3 +22,89 @@ footer {
   bottom: 0;
   width: 100%;
 }
+/* .container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+} */
+.about-section, .contact-section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.contact-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.contact-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.contact-card p {
+  margin: 5px 0;
+  color: #666;
+}
+/* .container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+} */
+.about-section, .contact-section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.contact-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.contact-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.contact-card p {
+  margin: 5px 0;
+  color: #666;
+}
+.page-content {
+  padding-top: 70px; /* Adjust based on your navbar height */
+  min-height: calc(100vh - 56px); /* Adjust 56px if your footer height differs */
+}
+
+
