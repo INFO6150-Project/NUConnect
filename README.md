@@ -91,7 +91,7 @@ All team contributions are reflected in the GitHub PR history.
 ## Team Members
 
 - **Member 1**: Mayukh Sinha
-- **Member 2**: Kshitiz Kumar
+- **Member 2**: Kshitij Kumar
 - **Member 3**: Rithwik Srivastava
 - **Member 4**: Adarsh Akhouri
 - **Member 5**: Ashish Babish Gangaramani
