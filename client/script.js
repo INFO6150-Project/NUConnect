@@ -7,4 +7,3 @@ $(currentItem.parents("li").get().reverse()).each(function () {
 });
 document.getElementByClassName("bredcrumb").innerHTML = path;
 }
-
