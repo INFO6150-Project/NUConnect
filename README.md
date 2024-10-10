@@ -77,9 +77,9 @@ Each team member worked on specific parts of the project, and contributions were
 
 - **Mayukh Sinha**: Implemented the Login and Signup pages, including form validation and bug fixes.
 - **Kshitiz Kumar**: Developed the Home and About pages, with navbar along with bug fixes.
-- **Rithwik Srivastava**: Created the Admin page, focusing on admin functionalities and integration along with bug fixes.
+- **Rithwik Srivastava**: Created the Admin page, focusing on admin functionalities, improved JS validations on signin and register pages along with bug fixes.
 - **Adarsh Akhouri**: Created Contact page, and integrated user informations on the page with bug fixes.
-- **Ashish Gangaram**: Created the hero section/card section on the admin page, and bug fixes.
+- **Ashish Babish Gangaramani**: Created the hero section/card section on the admin page, and bug fixes.
 
 All team contributions are reflected in the GitHub PR history.
 
@@ -94,7 +94,7 @@ All team contributions are reflected in the GitHub PR history.
 - **Member 2**: Kshitiz Kumar
 - **Member 3**: Rithwik Srivastava
 - **Member 4**: Adarsh Akhouri
-- **Member 5**: Ashish Gangaram
+- **Member 5**: Ashish Babish Gangaramani
 
 ## Tech Stack
 
