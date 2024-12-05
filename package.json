@@ -1,0 +1,11 @@
+{
+  "name": "nuconnect",
+  "version": "1.0.0",
+  "description": "An App to connect with NEU peers",
+  "main": "NUConnect/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Group 2",
+  "license": "ISC"
+}
