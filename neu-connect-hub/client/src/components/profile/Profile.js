@@ -18,7 +18,10 @@ const Profile = ({ getProfileById, profile: { profile }, auth }) => {
     getProfileById(id);
   }, [getProfileById, id]);
 
-  if (!profile) return <Spinner />;
+  if (!profile) return <Spinner />; // Show spinner if profile is not yet loaded
+
+  // Check if profile and profile.user are available before accessing _id
+  const isUserProfile = auth.isAuthenticated && !auth.loading && auth.user && auth.user._id === profile.user?._id;
 
   return (
     <div className="profile-container">
@@ -27,13 +30,11 @@ const Profile = ({ getProfileById, profile: { profile }, auth }) => {
           <Link to="/profiles" className="back-button">
             Back to Profiles
           </Link>
-          {auth.isAuthenticated &&
-            auth.loading === false &&
-            auth.user._id === profile.user._id && (
-              <Link to="/edit-profile" className="edit-button">
-                Edit Profile
-              </Link>
-            )}
+          {isUserProfile && (
+            <Link to="/edit-profile" className="edit-button">
+              Edit Profile
+            </Link>
+          )}
         </div>
       </div>
 
