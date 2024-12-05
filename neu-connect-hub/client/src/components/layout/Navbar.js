@@ -133,7 +133,7 @@ const Navbar = ({ auth = {}, admin = {}, logout }) => {
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="navbar-brand">
         <Link to="/" onClick={handleLinkClick}>
-          NEU Connect
+          NU Connect
         </Link>
       </div>
 
