@@ -63,7 +63,7 @@ const Navbar = ({ auth = {}, admin = {}, logout }) => {
         </Link>
       </li>
       <li>
-        <Link to="http://localhost:3000/login" onClick={handleLinkClick}>
+        <Link to="http://localhost:3001/login" onClick={handleLinkClick}>
           ConnectRoom
         </Link>
       </li>
@@ -133,7 +133,7 @@ const Navbar = ({ auth = {}, admin = {}, logout }) => {
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="navbar-brand">
         <Link to="/" onClick={handleLinkClick}>
-          NU Connect
+          NEU Connect
         </Link>
       </div>
 

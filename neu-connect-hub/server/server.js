@@ -7,7 +7,10 @@ const app = express();
 
 // Enable CORS with specific origin
 app.use(
-    cors()
+    cors({
+        origin: process.env.CLIENT_URL || 'http://localhost:3000',
+        credentials: true
+    })
 );
 
 // Connect Database
