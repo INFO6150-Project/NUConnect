@@ -4,8 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import formatDate from '../../utils/formatDate';
-import CommentForm from './CommentForm';
-import CommentItem from './CommentItem';
+import CommentForm from '../post/CommentForm';
+import CommentItem from '../post/CommentItem';
 import { getPost, addLike, removeLike, deletePost } from '../../actions/post';
 import './Post.css';
 
