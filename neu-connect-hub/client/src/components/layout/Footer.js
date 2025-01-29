@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
           <div className="footer-copyright">
             <p>
-              NU Connect © {new Date().getFullYear()}. All rights reserved.
+              NEU Connect © {new Date().getFullYear()}. All rights reserved.
             </p>
           </div>
         </div>
