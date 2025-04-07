@@ -1,0 +1,44 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  server:
+    build: .
+    container_name: server
+    working_dir: /app
+    volumes:
+      - ./server:/app/server
+      - ./server/node_modules:/app/server/node_modules
+    ports:
+      - "5002:5002"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+      - API_PORT=5002
+      - TOKEN_KEY=hereShouldGoStrongTokenKey
+    command: sh -c "cd server && npm install && npm run start"
+
+  client:
+    build: .
+    container_name: client
+    working_dir: /app
+    volumes:
+      - ./client:/app/client
+      - ./client/node_modules:/app/client/node_modules
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: sh -c "cd client && npm install && npm start"
+
+volumes:
+  mongo-data:
